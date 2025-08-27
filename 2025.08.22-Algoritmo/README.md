@@ -6,18 +6,18 @@ Um algoritmo é uma sequência de passos lógicos e bem definidos que servem par
 
 📌 Conceitos Importantes
 
-Finito
+## Finito
 Um algoritmo deve ter fim. Isso significa que ele não pode rodar para sempre — em algum momento ele precisa parar, depois de executar os passos necessários.
 
 Exemplo: Uma receita de bolo tem um fim — quando o bolo está pronto.
 
-Claro (ou definido)
+## Claro (ou definido)
 Cada passo do algoritmo deve ser claro e sem ambiguidade. Qualquer pessoa ou computador que seguir os passos deve entender exatamente o que fazer.
 
 Exemplo ruim: “Misture os ingredientes até ficar bom.” → Isso é vago.
 Exemplo bom: “Misture por 5 minutos com uma colher.”
 
-Resolve um problema
+## Resolve um problema
 O algoritmo tem um objetivo: ele serve para resolver um problema específico.
 
 Exemplo: Um algoritmo que ordena uma lista de números do menor para o maior.
