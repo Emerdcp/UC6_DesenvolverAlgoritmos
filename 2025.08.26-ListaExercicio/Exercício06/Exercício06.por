@@ -55,10 +55,10 @@ programa {
       se(salarioBruto <= 2500){
         ir = salarioBruto * (10/100 )
         escreva("\nValor de IR é: R$ "+ mat.arredondar(ir,2))
-      }senao
+      }senao{
         ir = salarioBruto * (20/100 )
-        escreva("\nValor de IR é: R$ "+ mat.arredondar(ir,2))
-
+        escreva("\nValor XXX de IR é: R$ "+ mat.arredondar(ir,2))
+      }
       desconto = inss + ir
       salarioLiquido = salarioBruto - desconto
 
@@ -67,3 +67,15 @@ programa {
     }    
   }
 }
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 2476; 
+ * @PONTOS-DE-PARADA = 59, 60, 61;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
