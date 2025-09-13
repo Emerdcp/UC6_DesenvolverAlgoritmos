@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Exercícios 03</h1>
+        <blockquote>Tudo sei que nada sei!</blockquote>
+        <p>03 Calcular a média de venda à partir dos valores vendidos em cada um dos meses do 1º Trim de 2018 de um vendedor
+        </p>
+        <hr>
+
+        <form>
+            <div class="form-group">
+                <label for="vendedor">Vendedor:</label>
+                <input type="text" id="vendedor">
+            </div>
+
+            <div class="form-group">
+                <label for="janeiro">Janeiro:</label>
+                <input type="text" id="janeiro">
+            </div>
+
+            <div class="form-group">
+                <label for="fevereiro">Fevereiro:</label>
+                <input type="text" id="fevereiro">
+            </div>
+
+            <div class="form-group">
+                <label for="marco">Março:</label>
+                <input type="text" id="marco">
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="fnCalcularMedia()">Calcular</button>
+                <button type="reset">Limpar</button>
+            </div>
+            
+            <hr>
+            
+            <h2>Vendedor: <span id="vendedorNome"></span></h2>
+            <h3>Média de vendas: <span id="media">R$ </span></h3>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
