@@ -91,7 +91,7 @@ h3 {
 }
 
 /* ---------- VALOR DA MÉDIA (SPAN) ---------- */
-#Aprovado {
+#Resoltado {
   font-weight: bold;                  /* Deixa o valor em negrito */
   color: #ff1e00;                     /* Azul para destacar o resultado */
 }
