@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Exercícios 05</h1>
+        <blockquote>"Eu sempre estou certo, até estar errado! - john Doe"</blockquote>
+        <p>05 Verificar se é dia, tarde ou noite e mostrar uma mensagem personalizada.
+        </p>
+        <hr>
+
+        <form>
+            <div class="form-group">
+                <label for="escolha">Escolha: </label>
+                <select name="periodo" id="periodo" onchange="fnVerificarPeriodo()"><!-- onchange - Serve para quando mudar -->
+                    <option>Selecione uma opção</option>
+                    <option value="m">Manhã</option>
+                    <option value="t">Tarde</option>
+                    <option value="n">Noite</option>
+                </select>
+                <h3>O período atual é : <span id="resposta"></span></h3>
+            </div>
+            <!-- <img src="imagens/todoDia.jpg" id="foto" alt="foto"> -->
+        </form>
+        <img src="imagens/todoDia.jpg" id="foto" alt="foto">
+    </div>
+
+
+    
+    <script src="app.js"></script>
+
+</body>
+
+</html>
