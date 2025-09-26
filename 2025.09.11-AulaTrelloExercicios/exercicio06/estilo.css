@@ -1,34 +1,118 @@
+/* ---------- RESET ---------- */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #ccd2d3;
-    font: normal 15pt helvetica;
-    
+/* ---------- GERAL ---------- */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  color: #333;
 }
 
-/* header{
-    color: #fff;
-    text-align: center;
+/* ---------- CABEÇALHO ---------- */
+header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-p{
-    color: #fff;
-    text-align: center;
+header h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 8px;
 }
 
-h3{
-    background: #fff;
-    border-radius: 10px;
-    padding: 25px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 5px 5px 10px #0000004d;
+header blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #2e7d32;
+  padding-left: 10px;
 }
 
-footer{
-    color: #fff;
-    text-align: center;
-    font-style: italic;
-} */
+/* ---------- TEXTO ---------- */
+p {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ---------- FORMULÁRIO ---------- */
+form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 420px;
+  max-width: 95%;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 4px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 6px rgba(46,125,50,0.3);
+  outline: none;
+}
+
+/* ---------- BOTÃO ---------- */
+button {
+  background: #2e7d32;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1b5e20;
+  transform: scale(1.05);
+}
+
+/* ---------- RESULTADO ---------- */
+h3 {
+  margin-top: 20px;
+  color: #222;
+}
+
+#lista_funcionarios {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+#lista_funcionarios li {
+  background: #f9fbe7;
+  border: 1px solid #dce775;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  transition: background 0.3s ease;
+}
+
+#lista_funcionarios li:hover {
+  background: #f0f4c3;
+}
