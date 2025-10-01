@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Exercício 010</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exercício 010</h1>
+        <blockquote><em>"Um mago nunca chega atrasado, ele sempre chega na hora que tem que chegar - Gandalf"</em></blockquote>
+    </header>
+    <h2><strong>10.</strong> Calcular a média de N alunos.</h2>
+    <hr>
+    <section>
+        <form id="painel_formulario">
+            <p>Digite o nome do aluno: <input type="text" id="nome"></p>
+            <p>Digite as notas referentes ao bimestre do aluno:</p>  
+            <p>1º Bimestre <input type="number" name="n1" id="n1"></p>
+            <p>2º Bimestre <input type="number" name="n2" id="n2"></p>
+            <p>3º Bimestre <input type="number" name="n3" id="n3"></p>
+            <p>4º Bimestre <input type="number" name="n4" id="n4"></p>
+            <p>5º Bimestre <input type="number" name="n5" id="n5"></p>
+            <p>6º Bimestre <input type="number" name="n6" id="n6"></p>
+            <button type="button" onclick="fnCalcular()">Calcular</button>
+            <button type="button" onclick="fnLimpar()">Limpar</button>
+        </form>     
+    </section>
+    <br>
+    <section>
+        <div id="painel_resultado">
+            <h3>Média: 
+            <span id="nome_res"></span> 📊→  
+            <span id="media"></span>
+            </h3>   
+            <button type="button" onclick="fnEsconderExibir('painel_formulario','painel_resultado')">Calcular a média de outro aluno</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>

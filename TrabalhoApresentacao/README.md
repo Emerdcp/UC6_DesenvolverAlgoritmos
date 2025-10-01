@@ -1,5 +1,9 @@
 # UC6_DesenvolverAlgoritmos
 
+## Apresentação:
+
+## Modelagem de Sistemas com UML: Diagramas de Caso de Uso - Grupo 02 - Simulação - 14/10/2025
+
 Grupo
 
 Emerson
