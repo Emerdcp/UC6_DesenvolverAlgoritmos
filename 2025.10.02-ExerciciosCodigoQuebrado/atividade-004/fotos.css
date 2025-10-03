@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+
+#foto-grande{
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.miniaturas img{
+    width: 80px;
+}
