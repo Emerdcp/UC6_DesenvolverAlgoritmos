@@ -152,3 +152,89 @@ Explicar cada ator e caso de uso.
 
 Simular como o usuário usaria o sistema.
 (Ex.: “O cliente entra, faz login, escolhe o produto e finaliza a compra. Esse caminho é mostrado no caso de uso X, Y e Z”).
+
+
+
+
+
+
+
+
+📘 Tema 4: Boas Práticas, Erros Comuns e Aplicações Reais
+✅ Boas Práticas para Diagramas Eficientes e Compreensíveis
+
+Clareza e simplicidade: os nomes dos casos de uso devem ser objetivos, como “Realizar Login” ou “Emitir Relatório”.
+
+Atores bem definidos: representam papéis (Cliente, Administrador, Funcionário) e não pessoas específicas.
+
+Organização visual: distribuir atores e casos de uso de forma equilibrada, evitando excesso de linhas cruzadas.
+
+Relacionamentos corretos: usar <<include>> para funções obrigatórias e <<extend>> para extensões opcionais.
+
+Alinhamento com requisitos: cada caso de uso deve estar diretamente relacionado a um requisito do sistema.
+
+Modularização: dividir diagramas muito grandes em subsistemas para manter a legibilidade.
+
+❌ Principais Erros a Evitar
+
+Excesso de detalhes: descrever passos técnicos ou telas específicas (ex.: “Clicar no botão de enviar”).
+
+Casos de uso técnicos: incluir operações internas do sistema que não são visíveis ao usuário (ex.: “Executar Query SQL”).
+
+Confusão entre atores e usuários reais: colocar nomes de pessoas ao invés de papéis genéricos.
+
+Ignorar relacionamentos: deixar de usar <<include>> e <<extend>> quando existem dependências claras.
+
+Poluição visual: tentar representar todos os requisitos em um único diagrama grande e confuso.
+
+Duplicação de casos de uso: criar vários casos para a mesma funcionalidade sob nomes diferentes.
+
+🏗️ Aplicações Práticas em Projetos Reais
+
+Sistemas Bancários (🏦):
+
+Atores: Cliente, Caixa Eletrônico, Funcionário do Banco.
+
+Casos de uso: “Realizar Saque”, “Consultar Saldo”, “Transferir Valores”, “Emitir Extrato”.
+
+E-commerce (🛒):
+
+Atores: Cliente, Administrador, Sistema de Pagamento.
+
+Casos de uso: “Realizar Login”, “Cadastrar-se”, “Comprar Produto”, “Gerar Nota Fiscal”.
+
+Hospitais (🏥):
+
+Atores: Paciente, Médico, Sistema de Convênio.
+
+Casos de uso: “Agendar Consulta”, “Emitir Receita”, “Registrar Atendimento”.
+
+Bibliotecas (📚):
+
+Atores: Aluno, Bibliotecário.
+
+Casos de uso: “Emprestar Livro”, “Devolver Livro”, “Cadastrar Usuário”.
+
+📑 Papel dos Diagramas na Documentação e nos Testes
+
+Na Documentação:
+
+São parte do documento de requisitos do sistema.
+
+Usados como referência durante o desenvolvimento e manutenção.
+
+Compreendidos por analistas, desenvolvedores e também pelo cliente.
+
+Nos Testes de Software:
+
+Cada caso de uso pode originar casos de teste.
+
+Exemplo: Caso de uso “Realizar Login” → testes possíveis:
+
+Login válido com credenciais corretas.
+
+Tentativa com senha incorreta.
+
+Tentativa com usuário inexistente.
+
+Garantem rastreabilidade entre requisitos → testes → implementação.
