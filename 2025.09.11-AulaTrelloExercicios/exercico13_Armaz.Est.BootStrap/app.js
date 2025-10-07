@@ -21,7 +21,7 @@ function fnListaVeiculos(){
 }
 
 function fnLimpar(){
-    document.getElementById("tabela_veiculos").value = ""
+    document.getElementById("form_veiculos").reset()
 }
 
 
