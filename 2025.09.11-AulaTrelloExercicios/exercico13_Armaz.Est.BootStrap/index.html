@@ -11,39 +11,45 @@
 
 <body>
     <div class="container">
-        <h1 class="text-md-center text-end">Exercício 13</h1> <!-- class="text-star direito, end esquerda" -->
-        <blockquote>"Não me venha com esse papo de emprego, o que eu quero é sossego"</blockquote>
-        <p>13 Armazenando lista de carros de um estacionamento.</p>
+        <h1>Exercício 13</h1>
+        <blockquote>Quem com ferro fere, com ferro será ferido!</blockquote>
+        <p>13 Armazenando lista de carros de um estacionamento</p>
         <hr>
+        <form class="border border-info m-5 border-1 rounded p-3">
+            <div class="row mb-3">
+                <div class="col">
+                    <label class="form-label">Número da Vaga</label>
+                    <input class="form-control" id="numero_vaga">
+                </div>
+                <div class="col">
+                    <label class="form-label">Veículo</label>
+                    <input class="form-control" id="veiculo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-success w-50" onclick="fnSalvarVeiculo(); fnListaVeiculos(); fnLimpar()">Salva</button>
+                </div>
+            </div>
+        </form>
         <div class="row">
-            <div class="col-12 col-md-4 bg-dark text-light fundo">Texto 1</div>
-            <div class="col-12 col-md-4 bg-warning">Texto 2</div>
-            <div class="col-12 col-md-4 bg-success">Texto 3</div>
+            <div class="col">
+                <table class="table w-75 m-auto">
+                    <thead>
+                        <tr>
+                            <th>Número de Vaga</th>
+                            <th>Veículo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela_veiculos">
+                        <tr>
+                            <!-- <td>001</td>
+                            <td>Marea EAH-2021</td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    
-    <table class="table table-primary tabel-strped table-hover mt-5">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-            </tr>
-            <tbody>
-                <tr>
-                    <td>Emerson</td>
-                    <td>36</td>
-                </tr> 
-                <tr>
-                    <td>Emerson</td>
-                    <td>36</td>
-                </tr> 
-            </tbody>
-
-        </thead>
-
-    </table>
-
-    <a href="https://sp.senac.br" class="btn btn-outline-success btn-lg">Senac</a>
-
     </div>
 
     <script src="app.js"></script>
@@ -51,3 +57,5 @@
 </body>
 
 </html>
+
+
