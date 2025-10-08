@@ -1,7 +1,78 @@
-.cartao{
+.cartao1{
     background-color: rgb(87, 3, 165)!important;
     transition: transform 0.5s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 10);
+}
+
+.cartao2{
+    background-color: rgb(43, 1, 82)!important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 10);
+}
+
+.cartao3{
+    background-color: rgb(199, 4, 183)!important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 10);
+}
+
+.cartao4{
+    background-color: rgb(231, 1, 135)!important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 10);
+}
+.cartao5 {
+    background-color: rgb(120, 0, 180) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao6 {
+    background-color: rgb(70, 0, 130) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao7 {
+    background-color: rgb(180, 0, 150) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao8 {
+    background-color: rgb(200, 0, 120) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao9 {
+    background-color: rgb(150, 0, 170) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao10 {
+    background-color: rgb(100, 10, 140) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao11 {
+    background-color: rgb(220, 20, 170) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao12 {
+    background-color: rgb(190, 30, 130) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cartao13 {
+    background-color: rgb(160, 10, 160) !important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .cartao:hover{

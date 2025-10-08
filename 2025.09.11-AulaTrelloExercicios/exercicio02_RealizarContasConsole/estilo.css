@@ -1,0 +1,104 @@
+/* 🎨 ---------- ESTILO GERAL ---------- */
+body {
+  background: linear-gradient(135deg, #c9e4ff, #ffffff);
+  font-family: "Poppins", Arial, sans-serif;
+  color: #212529;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.25);
+  max-width: 750px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* ---------- TÍTULOS ---------- */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d6efd;
+  text-shadow: 1px 1px 4px rgba(13, 110, 253, 0.3);
+  margin-bottom: 10px;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 15px;
+  border-left: 4px solid #0d6efd;
+  padding-left: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ---------- LINHA ---------- */
+hr {
+  width: 80%;
+  margin: 20px auto;
+  border: none;
+  border-top: 3px solid #0d6efd;
+  opacity: 0.5;
+}
+
+/* ---------- RESULTADOS ---------- */
+h3 {
+  font-weight: 600;
+  margin: 15px 0;
+  color: #0b5ed7;
+  background: rgba(13, 110, 253, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+h3:hover {
+  background: rgba(13, 110, 253, 0.15);
+  transform: translateY(-2px);
+}
+
+span {
+  color: #198754;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* ---------- ANIMAÇÃO ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
