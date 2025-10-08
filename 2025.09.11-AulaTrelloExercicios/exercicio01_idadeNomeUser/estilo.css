@@ -1,0 +1,81 @@
+/* 🎨 ---------- ESTILO GERAL ---------- */
+body {
+  background: linear-gradient(135deg, #dbe9ff, #fff);
+  font-family: "Poppins", Arial, sans-serif;
+  color: #212529;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.2);
+  max-width: 700px;
+  animation: fadeIn 1s ease;
+  text-align: center;
+}
+
+/* ---------- TÍTULOS ---------- */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(13, 110, 253, 0.3);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #495057;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* ---------- LINHA ---------- */
+hr {
+  width: 80%;
+  margin: 20px auto;
+  border: none;
+  border-top: 3px solid #0d6efd;
+  opacity: 0.5;
+}
+
+/* ---------- ANIMAÇÕES ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}

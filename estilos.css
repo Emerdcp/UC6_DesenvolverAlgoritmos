@@ -1,0 +1,9 @@
+.cartao{
+    background-color: rgb(87, 3, 165)!important;
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 10);
+}
+
+.cartao:hover{
+    transform: translateY(-10px);
+}

@@ -1,3 +1,149 @@
-.fundo{
-    background-color:  pink !important;
+/* 🌈 ---------- ESTILO GERAL ---------- */
+body {
+  background: linear-gradient(135deg, #dbe9ff, #fff);
+  font-family: "Poppins", Arial, sans-serif;
+  color: #212529;
+  padding: 40px 10px;
+  min-height: 100vh;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 850px;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.2);
+  animation: fadeIn 1s ease;
+}
+
+/* ---------- CABEÇALHO ---------- */
+h1 {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(13, 110, 253, 0.3);
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* ---------- FORMULÁRIO ---------- */
+form {
+  background: linear-gradient(120deg, #eaf3ff, #e1f2ff);
+  border: 1px solid #cce0ff;
+  transition: 0.3s;
+}
+
+form:hover {
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.2);
+}
+
+label {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+/* ---------- CAMPOS ---------- */
+input.form-control {
+  border: 2px solid #cce0ff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+}
+
+/* ---------- BOTÃO ---------- */
+button {
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.4s ease;
+  box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
+  border-radius: 12px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #157347;
+  box-shadow: 0 0 15px rgba(25, 135, 84, 0.5);
+}
+
+/* ---------- TABELA ---------- */
+table {
+  margin-top: 30px;
+  text-align: center;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 1s ease;
+}
+
+table thead {
+  background: linear-gradient(90deg, #0d6efd, #1e90ff);
+  color: white;
+  letter-spacing: 1px;
+}
+
+table tbody tr {
+  transition: background 0.3s ease;
+}
+
+table tbody tr:hover {
+  background-color: #e9f2ff;
+  transform: scale(1.01);
+}
+
+/* ---------- ANIMAÇÕES ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    width: 100%;
+  }
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação de Caso de Uso - E-commerce</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>💻 Simulação de Caso de Uso - E-commerce</h1>
+    <p>Exemplo prático de boas práticas na modelagem UML</p>
+  </header>
+
+  <section class="diagram-section">
+    <h2>🧠 Diagrama de Caso de Uso</h2>
+    <img src="diagrama-uml.png" alt="Diagrama de Caso de Uso" class="uml-img">
+    <p><strong>Atores:</strong> Cliente, Sistema de Pagamento</p>
+    <p><strong>Casos de uso:</strong> Realizar Login, Comprar Produto, Emitir Nota Fiscal</p>
+  </section>
+
+  <section class="simulation">
+    <h2>🎬 Simulação</h2>
+    <div id="app">
+      <div class="login-box">
+        <h3>Realizar Login</h3>
+        <input type="text" id="user" placeholder="Usuário">
+        <input type="password" id="pass" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <p id="msg"></p>
+      </div>
+
+      <div id="store" class="hidden">
+        <h3>Comprar Produto</h3>
+        <div class="product">
+          <p>🩳 Pijama Feminino - R$ 59,90</p>
+          <button onclick="comprar()">Comprar</button>
+        </div>
