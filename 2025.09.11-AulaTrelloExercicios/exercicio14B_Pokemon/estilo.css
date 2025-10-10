@@ -1,0 +1,11 @@
+.esconder-numero{
+    background-color: #212529;
+}
+
+.esconder-nome{
+    background-color: #212529;
+}
+
+.esconder-pokemon{
+    filter: brightness(0);
+}

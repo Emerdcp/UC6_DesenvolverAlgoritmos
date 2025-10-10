@@ -321,4 +321,17 @@ function fnRolarDados(){
     // console.log(numeroSorteado)
 }
 
+function fnEsconder(){
+    document.getElementById("numero").classList.add("esconder-numero")
+    document.getElementById("nome").classList.add("esconder-nome")
+    document.getElementById("foto").classList.add("esconder-pokemon")
+}
+
+function fnRevelar(){
+  document.getElementById("numero").classList.remove("esconder-numero")
+  document.getElementById("nome").classList.remove("esconder-nome")
+  document.getElementById("foto").classList.remove("esconder-pokemon")
+}
+
 fnListaPokemon()
+fnEsconder()
