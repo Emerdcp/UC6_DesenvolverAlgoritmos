@@ -245,6 +245,11 @@ Garantem rastreabilidade entre requisitos → testes → implementação.
 
 
 
+
+
+
+
+
 # Apresentação
 
 📘 Tema 4: Boas Práticas, Erros Comuns e Aplicações Reais
