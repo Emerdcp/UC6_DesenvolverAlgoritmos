@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f7fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #1976d2; /* azul principal */
+  color: white;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.titulo-pequeno {
+  font-size: 1.5rem;        /* diminui o tamanho da fonte */
+  font-weight: 600;       /* deixa levemente em negrito */
+  color: #555;            /* tom de cinza suave */
+  margin-bottom: 5px;     /* aproxima do h3 */
+}
+
+button {
+  background-color: #1976d2;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  margin-top: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#produtos-section img {
+  width: 150px;      /* controla o tamanho da imagem */
+  height: auto;      /* mantém proporção */
+  display: block;    /* centraliza */
+  margin: 0 auto 10px auto; /* centraliza e dá espaçamento inferior */
+  border-radius: 10px; /* opcional: bordas suaves */
+}
