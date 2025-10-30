@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 014</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Agenda de Contatos</h1>
+        <section>
+            <div class="row">
+                <div class="col">
+                    <form class="mx-auto p-5 w-50" id="formulario">
+                        <label class="form-label">Nome:</label>
+                        <input class="form-control" id="nome">
+                        <label class="form-label mt-4">E-mail:</label>
+                        <input type="email" class="form-control" id="email">
+                        <label class="form-label mt-4">Telefone:</label>
+                        <input class="form-control" id="telefone">
+                        <label class="form-label mt-4">URL da foto:</label>
+                        <input class="form-control" id="id-foto">
+                        <button type="button" class="btn btn-primary w-100 mt-4" id="btSalvar">Salvar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center g-2" id="listaDeContatos">
+            
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

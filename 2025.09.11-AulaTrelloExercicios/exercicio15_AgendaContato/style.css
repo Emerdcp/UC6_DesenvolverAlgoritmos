@@ -1,0 +1,121 @@
+/* === RESET BÁSICO === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === CORPO === */
+body {
+  background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === TÍTULO === */
+h1 {
+  margin: 40px 0 20px;
+  font-weight: 600;
+  color: #0d6efd;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* === FORMULÁRIO === */
+form {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: 500;
+  color: #555;
+}
+
+form input {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.3);
+}
+
+/* === BOTÃO SALVAR === */
+#btSalvar {
+  font-weight: 600;
+  background: #0d6efd;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+#btSalvar:hover {
+  background: #0b5ed7;
+  transform: scale(1.03);
+}
+
+/* === LISTA DE CONTATOS === */
+#listaDeContatos {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* === CARD === */
+.card {
+  border-radius: 15px !important;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* === BOTÃO EXCLUIR === */
+.card .btn-danger {
+  background-color: #dc3545;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.card .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+  form {
+    width: 90% !important;
+  }
+  .card {
+    width: 90% !important;
+  }
+}
