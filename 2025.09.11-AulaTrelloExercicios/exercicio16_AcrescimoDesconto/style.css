@@ -1,0 +1,98 @@
+/* === RESET BÁSICO === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === CORPO === */
+body {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === CONTAINER PRINCIPAL === */
+.container {
+  margin-top: 60px;
+  max-width: 700px;
+}
+
+/* === TÍTULO === */
+h1 {
+  font-weight: 600;
+  color: #0d6efd;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+/* === FORMULÁRIO === */
+form {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+form label {
+  font-weight: 500;
+  color: #444;
+}
+
+/* Inputs e Select padronizados */
+form input.form-control,
+form select.form-select {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+form input.form-control:focus,
+form select.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.3);
+}
+
+/* === BOTÃO CALCULAR === */
+#btCalcular {
+  font-weight: 600;
+  background: #0d6efd;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#btCalcular:hover {
+  background: #0b5ed7;
+  transform: scale(1.03);
+}
+
+/* === RESULTADO === */
+h3 {
+  background: #f1f5ff;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  color: #0d6efd;
+  box-shadow: inset 0 2px 6px rgba(13, 110, 253, 0.1);
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+  form {
+    width: 90% !important;
+    padding: 30px !important;
+  }
+  .container {
+    margin-top: 40px;
+  }
+}

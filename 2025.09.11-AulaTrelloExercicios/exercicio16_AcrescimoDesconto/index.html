@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 16</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Acréscimo e Desconto</h1>
+        <section>
+            <div class="row">
+                <div class="col">
+                    <form class="mx-auto p-5 w-50" id="formulario">
+                        <label class="form-label">Valor da conta</label>
+                        <input type="number" class="form-control" id="valorConta">
+
+                        <label class="form-label mt-4">Valor %</label>
+                        <input type="number" class="form-control" id="valorPorcentagem">
+
+                        <label class="form-label mt-4">Função</label>
+                        <select id="funcao" class="form-select mt-2">
+                            <option value="">Selecione a Opção</option>
+                            <option value="A">Acréscimo</option>
+                            <option value="D">Desconto</option>
+                        </select>
+                        <h3 class="mt-4">R$ <span id="resultado">0.00</span></h3>
+
+                        <button type="button" class="btn btn-primary w-100 mt-4" onclick="fnCalcular()" >Calcular</button>
+                        <button type="button" class="btn btn-secondary w-100 mt-4" onclick="fnLimpar()" >Limpar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center g-2">
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
