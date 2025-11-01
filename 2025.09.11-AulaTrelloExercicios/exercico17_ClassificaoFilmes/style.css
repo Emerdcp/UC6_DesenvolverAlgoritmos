@@ -1,4 +1,4 @@
-/* === RESET BÁSICO === */
+/* === RESET === */
 * {
   margin: 0;
   padding: 0;
@@ -7,107 +7,165 @@
 
 /* === CORPO === */
 body {
-  background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #e0e0e0;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-/* === TÍTULO === */
+/* === TÍTULO PRINCIPAL === */
 h1 {
   margin: 40px 0 20px;
   font-weight: 600;
-  color: #0d6efd;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #4dabf7;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* === FORMULÁRIO === */
 form {
-  background: #fff;
+  background: #1f1f1f;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  color: #ddd;
 }
 
 form label {
   font-weight: 500;
-  color: #555;
+  color: #ccc;
 }
 
-form input {
+form input,
+form select,
+form textarea {
+  background: #2a2a2a;
+  color: #fff;
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   transition: all 0.3s ease;
 }
 
-form input:focus {
-  border-color: #0d6efd;
-  box-shadow: 0 0 6px rgba(13, 110, 253, 0.3);
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #4dabf7;
+  box-shadow: 0 0 6px rgba(77, 171, 247, 0.4);
+  outline: none;
 }
 
 /* === BOTÃO SALVAR === */
 #btSalvar {
   font-weight: 600;
-  background: #0d6efd;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   border: none;
   border-radius: 10px;
-  padding: 10px;
+  padding: 12px;
+  color: #fff;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease;
 }
 
 #btSalvar:hover {
-  background: #0b5ed7;
-  transform: scale(1.03);
+  background: linear-gradient(135deg, #3399ff, #0069d9);
+  transform: scale(1.04);
 }
 
-/* === LISTA DE CONTATOS === */
-#listaDeContatos {
-  margin-top: 40px;
+/* === CONTAINER DE FILMES === */
+#classicacaoFilmes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 25px !important;
+  /* margin: 20px !important;  */
+  /* padding: 20px !important; */
+}
+/* === CARD === */
+
+.cards-container {
+  display: flex;
+  gap: 20px !important; 
+  /* margin: 20px !important; */
+  /* padding: 20px !important; */
+  /* gap: 20px !important;  */
 }
 
-/* === CARD === */
 .card {
+  background: #212121 !important;
+  border: 1px solid #333 !important;
   border-radius: 15px !important;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #eee;
+  margin: 20px !important;
+  /* padding: 20px !important; */
+  /* gap: 20px !important;  */
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
 }
 
 .card img {
-  height: 220px;
+  height: 230px;
   object-fit: cover;
+  border-bottom: 1px solid #333;
 }
 
 .card-title {
-  color: #0d6efd;
+  color: #4dabf7;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .card-text {
   font-size: 0.9rem;
-  color: #555;
+  color: #ccc;
+}
+
+.card-text.text-muted {
+  color: #888 !important;
+  font-size: 0.85rem;
+}
+
+/* === TRAILER (iframe) === */
+.ratio iframe {
+  border-radius: 8px;
 }
 
 /* === BOTÃO EXCLUIR === */
 .card .btn-danger {
-  background-color: #dc3545;
+  background: #c62828;
   border: none;
   border-radius: 8px;
   font-weight: 500;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .card .btn-danger:hover {
-  background-color: #c82333;
+  background: #e53935;
+  transform: scale(1.05);
+}
+
+/* === SCROLLBAR PERSONALIZADA === */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4dabf7;
 }
 
 /* === RESPONSIVIDADE === */

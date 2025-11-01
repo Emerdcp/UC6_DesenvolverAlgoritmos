@@ -22,7 +22,7 @@
                         <input class="form-control" id="nomeFilme">
 
                         <label class="form-label mt-2">Foto de capa</label>
-                        <input class="form-control" id="fotoCapa">            
+                        <input class="form-control" id="fotoCapa" placeholder="https://imagem.com/...">            
 
                         <div class="row mt-3">
                             <div class="col-md-6">
@@ -32,19 +32,20 @@
                                 
                             <div class="col-md-6">
                                 <label class="form-label mt-2">Classificação</label>
-                                <select id="classicacao" class="form-control">
+                                <select id="classificacao" class="form-control">
                                     <option value="">Escolha ⭐</option>
-                                    <option value="1">⭐</option>
-                                    <option value="2">⭐⭐</option>
-                                    <option value="3">⭐⭐⭐</option>
-                                    <option value="4">⭐⭐⭐⭐</option>
-                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="⭐">⭐</option>
+                                    <option value="⭐⭐">⭐⭐</option>
+                                    <option value="⭐⭐⭐">⭐⭐⭐</option>
+                                    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                                    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
                                 </select>
                             </div>
                         </div>                        
 
-                        <label class="form-label mt-2">Treiler</label>
-                        <input class="form-control" id="treiler">
+                        <label class="form-label mt-2">Trailer</label>
+                        <input type="url" class="form-control" id="trailer" placeholder="https://youtube.com/...">
+
 
                         <div class="row mt-3">
                             <div class="col-md-6">
@@ -56,13 +57,16 @@
                                 <label class="form-label mt-2">Duração</label>
                                 <input class="form-control" placeholder="1h35m" id="duracao">
                             </div>
-                        </div>                        
+                        </div>    
+                        
+                        <label class="form-label">Descrição</label>
+                        <textarea class="form-control" id="descricao" rows="2"></textarea>
 
                         <button type="button" class="btn btn-primary w-100 mt-4" id="btSalvar">Salvar</button>
                     </form>
                 </div>
             </div>
-            <div class="row justify-content-center g-2" id="classicacaoFilmes">  
+            <div class="row justify-content-center g-4" id="classicacaoFilmes">  
             </div>
         </section>
         
